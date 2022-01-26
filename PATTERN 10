@@ -1,0 +1,29 @@
+* * * * * * 
+ * * * * * 
+  * * * * 
+   * * * 
+    * * 
+     * 
+      
+
+Process finished with exit code 0
+-----------------------------------------------
+
+package com.dhas;
+public class Main {
+    public static void main(String[] args) {
+        int row=6;
+        int space=0;
+        for(int i=row;i>=0;i--){
+            for (int j=0;j<space;j++){
+                System.out.print(" ");
+            }
+            space++;
+            for (int j=0;j<=i-1;j++){
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+    }
+}
