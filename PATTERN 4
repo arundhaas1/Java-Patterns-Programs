@@ -1,0 +1,43 @@
+enter a number
+4
+12344321
+123**321
+12****21
+1******1
+
+Process finished with exit code 0
+-----------------------------------------------------
+
+package com.dhas;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String []args){
+        Scanner input=new Scanner(System.in);
+        System.out.println("enter a number");
+        int number=input.nextInt();
+
+        int count=number;
+
+        for (int i=1;i<=number;i++){
+            for (int j=1;j<=number;j++){
+                if (count<j){
+                    System.out.print("*");
+                }else{
+                    System.out.print(j);
+                }
+            }
+            for (int j=number;j>=1;j--){
+                if(count<j){
+                    System.out.print("*");
+                }else {
+                    System.out.print(j);
+                }
+            }
+            count--;
+            System.out.println();
+        }
+    }
+}
