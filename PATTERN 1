@@ -1,1 +1,38 @@
+//OUTPUT
 
+Enter the num of lines to be printed
+5
+*1234
+0*234
+01*34
+012*4
+0123*
+
+Process finished with exit code 0
+
+
+-----------------------------------------------------------------------------
+
+package com.dhas;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter the num of lines to be printed");
+        int number=input.nextInt();
+
+        for (int i=0;i<number;i++){
+            for (int j=0;j<number;j++){
+                if(i==j){
+                    System.out.print("*");
+                }else{
+                    System.out.print(j);
+                }
+            }
+            System.out.println();
+        }
+    }
+}
