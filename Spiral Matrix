@@ -83,7 +83,7 @@ public class Main {
                 }
             }
         }
-       //For djsplay purpose only
+       //For display purpose only
         for (row = 0; row < size; row++){
             for (col = 0; col < size; col++){
                 int n = matrix[row][col];
